@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'lavanya', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_TOKEN')]) {
-                    git url: " https://lavanyasantana-s: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@github.com/lavanyasantana-s/jenkins_docker_demo.git\"
+                    git url: "https://lavanyasantana-s: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@github.com/lavanyasantana-s/jenkins_docker_demo.git"
                 }
             }
         }
